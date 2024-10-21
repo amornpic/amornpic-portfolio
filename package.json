@@ -1,20 +1,40 @@
 {
-  "name": "amornpic-portfolio",
-  "type": "module",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro check && astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "@astrojs/mdx": "^3.1.8",
-    "@astrojs/rss": "^4.0.9",
-    "@astrojs/sitemap": "^3.2.1",
-    "astro": "^4.16.6",
-    "@astrojs/check": "^0.9.4",
-    "typescript": "^5.6.3"
-  }
+	"name": "amornpic-portfolio",
+	"type": "module",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro check && astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"lint": "biome lint --write .",
+		"lint:fix": "biome check --write ."
+	},
+	"dependencies": {
+		"@astrojs/check": "^0.9.4",
+		"@astrojs/mdx": "^3.1.8",
+		"@astrojs/react": "^3.6.2",
+		"@astrojs/rss": "^4.0.9",
+		"@astrojs/sitemap": "^3.2.1",
+		"@astrojs/tailwind": "^5.1.2",
+		"@radix-ui/react-avatar": "^1.1.1",
+		"@radix-ui/react-dropdown-menu": "^2.1.2",
+		"@radix-ui/react-slot": "^1.1.0",
+		"@types/react": "^18.3.11",
+		"@types/react-dom": "^18.3.1",
+		"astro": "^4.16.6",
+		"class-variance-authority": "^0.7.0",
+		"clsx": "^2.1.1",
+		"lucide-react": "^0.453.0",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1",
+		"tailwind-merge": "^2.5.4",
+		"tailwindcss": "^3.4.14",
+		"tailwindcss-animate": "^1.0.7",
+		"typescript": "^5.6.3"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4"
+	}
 }
