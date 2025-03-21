@@ -1,12 +1,22 @@
 {
-	"extends": "astro/tsconfigs/strict",
-	"compilerOptions": {
-		"strictNullChecks": true,
-		"jsx": "react-jsx",
-		"jsxImportSource": "react",
-		"baseUrl": ".",
-		"paths": {
-			"@/*": ["./src/*"]
-		}
-	}
+  "extends": "astro/tsconfigs/strict",
+  "include": [
+    ".astro/types.d.ts",
+    "src",
+    "config.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  "compilerOptions": {
+    "strictNullChecks": true,
+    "baseUrl": ".",
+    "jsx": "react-jsx",
+    "paths": {
+      "@/*": ["src/*"],
+      "~@/*": ["./*"]
+    },
+    "jsxImportSource": "react",
+  }
 }

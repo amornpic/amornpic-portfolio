@@ -1,0 +1,21 @@
+---
+import stateConfig from '~@/config';
+import type { ThemeOptions } from '@/typings/config';
+import ThemeSelect from '@/components/theme-select';
+import SocialLinks from '@/components/social-links';
+import config from '~@/config';
+
+interface Props {
+  copyright?: string;
+}
+
+const { copyright = stateConfig.footer?.copyright } = Astro.props;
+---
+
+<footer class="mt-auto">
+  {!!config.socialLinks && <SocialLinks client:visible />}
+  <div class="mt-4 flex items-center justify-between">
+    <div class="text-slate8 text-sm">{copyright}</div>
+    {(stateConfig.theme as ThemeOptions).enableUserChange && <ThemeSelect client:visible />}
+  </div>
+</footer>
