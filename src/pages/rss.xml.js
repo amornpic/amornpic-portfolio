@@ -1,7 +1,3 @@
-/*
- * @Author: kim
- * @Description: rss 提要
- */
 import rss from '@astrojs/rss';
 import { experimental_AstroContainer } from "astro/container";
 import { loadRenderers } from "astro:container";

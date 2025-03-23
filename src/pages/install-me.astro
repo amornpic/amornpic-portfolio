@@ -1,0 +1,10 @@
+---
+import PageLayout from '@/components/layouts/PageLayout.astro';
+import { MyTerminal } from '@/components/magicui/my-terminal';
+---
+
+<PageLayout>
+  <section class="relative mb-16 center">
+    <MyTerminal client:load></MyTerminal>
+  </section>
+</PageLayout>

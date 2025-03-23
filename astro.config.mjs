@@ -15,16 +15,12 @@ import { remarkModifiedTime } from './plugins/remark-modified-time';
 import { remarkReadingTime } from './plugins/remark-reading-time';
 import config from './config';
 
-function computedIntegrations() {
-  const result = [astroExpressiveCode(), mdx(), react(), sitemap(config.sitemap)];
-
-  return result;
-}
-
 function generateAstroConfigure() {
   const astroConfig = {
     site: config.site,
-    integrations: computedIntegrations(),
+    integrations: [astroExpressiveCode(), mdx(), react({
+      experimentalReactChildren: true,
+    }), sitemap(config.sitemap)],
     markdown: {
       remarkPlugins: [
         remarkGemoji,
