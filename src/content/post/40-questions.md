@@ -6,6 +6,7 @@ tags:
   - Thinking
   - Writing
 pubDate: 2022-01-14
+draft: true
 ---
 
 ## About

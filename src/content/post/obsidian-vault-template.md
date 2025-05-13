@@ -6,6 +6,7 @@ tags:
   - Writing
   - Dev
 pubDate: 2024-04-16
+draft: true
 ---
 
 I use [Obsidian](https://stephango.com/obsidian) to think, take notes, write essays, and publish this site. This is my bottom-up approach to note-taking and organizing things I am interested in. It embraces chaos and laziness to create emergent structure.
